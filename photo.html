@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>AG — Фотограф</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: #000;
+      color: #fff;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding: 60px 60px 30px;
+      background-color: #000;
+    }
+
+    .logo {
+      font-weight: bold;
+      font-size: 22px;
+      color: #ff6a00;
+      margin-top: 10px;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 20px;
+      font-weight: bold;
+      font-size: 14px;
+      letter-spacing: 1px;
+    }
+
+    nav a:hover {
+      color: #ff6a00;
+    }
+
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 80px 60px;
+      background-color: #000;
+    }
+
+    .hero-text {
+      max-width: 50%;
+    }
+
+    .hero-text h1 {
+      font-size: 64px;
+      line-height: 1.2;
+      margin: 0;
+      color: #fff;
+    }
+
+    .hero-text h1 span {
+      color: #ff6a00;
+    }
+
+    .hero-text p {
+      margin-top: 20px;
+      font-size: 18px;
+      color: #ccc;
+      max-width: 500px;
+    }
+
+   
+   .hero-image img {
+  width: 400px;        /* чуть меньше фото */
+  height: auto;
+  border-radius: 8px;
+  box-shadow: none;    /* убрали красное свечение */
+  transform: translateX(-100px); 
+}
+
+
+    @media (max-width: 900px) {
+      header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      nav {
+        margin-top: 20px;
+      }
+
+      .hero {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .hero-text, .hero-image {
+        max-width: 100%;
+      }
+
+      .hero-image img {
+        width: 80%;
+        margin-top: 30px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">AG</div>
+  <nav>
+    <a href="#portfolio">PORTFOLIO</a>
+    <a href="#about">ABOUT US</a>
+    <a href="#services">SERVICES</a>
+    <a href="#contact">CONTACT</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-text">
+    <h1><span>PHOTOGRAPHER</span><br>ALEXANDRA GERASIMCHUK</h1>
+    <p>Hello, I’m Sasha — a photographer for all occasions. Whatever your vision, I’ll make it happen. Looking forward to working with you!</p>
+  </div>
+  <div class="hero-image">
+    <img src="1.jpg" alt="Фотограф с камерой">
+  </div>
+</section>
+
+</body>
+</html>
